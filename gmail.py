@@ -1,3 +1,16 @@
+# - 1° código python. Função da automação:
+# - Baixar todos os emails recebidos de uma conta GMAIL (Body + Anexos)
+# e salvar em uma pasta no servidor FTP, cada pasta tendo como nome o
+# o email do remetente + data.
+# Código funciona 24h por dia, 7 dias por semana de 5 em 5 minutos
+# e está hospedado em um servidor Ubuntu..
+# Sistema conta com um log, que foi configurado usando Fish Shell.
+# O log registra cada email baixado e suas principais informações,
+# também registra qualquer erro que possa ocorrer.
+# - Em 30 dias de funcionamentos foram baixados 3.242 emails, tendo
+# 0 erros registrados no log.
+
+
 from ast import Pass
 from imap_tools import MailBox, A
 from pathlib import Path
